@@ -8,6 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      newsSource: "",
+      apiKey: "",
       news: []
     }
   }
