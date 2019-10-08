@@ -24,8 +24,25 @@ Head over to `src/components/Articles.jsx`, and make sure your Articles componen
 - urlToImage
 - description
 
+As you map through the articles and print them on the screen as JSX, you may want to try a JSX structure like this:
+
+```html
+<div className="article">
+  <div className="article-image">
+    <!-- article image goes here -->
+  </div>
+  <div className="article-info">
+    <!-- article title, link, and description go here -->
+  </div>
+</div>
+```
+
+A structure like that should be relatively easy to style. Your don't have to follow this structure, though! Whatever works and looks good is fine.
+
 ## Style your app
-Your final design should look something like this:
+Head to `src/App.css` and improve the look of your app with CSS. The final design should look something like the image below. You DO NOT have to copy the design exactly —— feel free to be creative —— but your final app should look presentable.
+
+
 ![](https://res.cloudinary.com/briandanger/image/upload/v1570551819/screencapture-localhost-3000-2019-10-08-12_22_59_anzmex.png)
 
 
