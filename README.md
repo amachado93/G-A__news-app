@@ -16,6 +16,8 @@ Check out `src/App.js`. This component needs to make an axios call the moment it
 
 Make an axios call to `https://newsapi.org/v2/top-headlines?sources=${YOUR NEWS SOURCE}&apiKey=${YOUR API KEY}` and use `this.setState` to update the `news` in your app's state. Then, in the return function, use props to pass `this.state.news` to your Articles component.
 
+You can find sources for different news outlets [here](https://newsapi.org/docs/endpoints/sources). Feel free to choose whatever news outlet suits you. Some popular 
+
 ## Rendering the News
 Head over to `src/components/Articles.jsx`, and make sure your Articles component is taking in props. Then, in the Articles coomponent's return function, `.map()` through your articles and print out the following:
 
