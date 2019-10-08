@@ -7,6 +7,7 @@ You're going to build an app that, upon launching, sends an axios request to [th
 - Run `npm install axios` to ensure you have axios in your project. Make sure to `import axios from 'axios';` at the top of your `src/App.js` file.
 - Visit [the news API](https://newsapi.org/) and sign up to get an API key. 
 - type `code .` to open the app in VS Code. 
+- type `npm start` when you want to run a server and see your app in the browser
 
 ## Header and Footer
 Header and Footer components have been created for you, but they're currently blank. Add some JSX to the `return()` methods and style the code with CSS.
