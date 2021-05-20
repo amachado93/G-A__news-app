@@ -15,7 +15,7 @@ Header and Footer components have been created for you, but they're currently bl
 ## API Call
 Check out `src/App.js`. This component needs to make an axios call the moment it mounts. A `ComponentDidMount()` lifecycle method has been provided for you. In order to make that call, you'll need a news source and an API key.
 
-You can find sources for different news outlets [here](https://newsapi.org/docs/endpoints/sources). Feel free to choose whatever news outlet suits you and add it to your app's initial state in the constuctor function. Add your API key here, too.
+You can find sources for different news outlets [here](https://newsapi.org/docs/endpoints/top-headlines). Feel free to choose whatever news outlet suits you and add it to your app's initial state in the constuctor function. Add your API key here, too.
 
 Make an `axios.get` request to `https://newsapi.org/v2/top-headlines?sources=${YOUR NEWS SOURCE}&apiKey=${YOUR API KEY}` and use `this.setState` to update the `news` in your app's state. Then, in the return function, use props to pass `this.state.news` to your Articles component.
 
