@@ -1,9 +1,23 @@
 import React from 'react';
 
-function Articles() {
+const Articles = (props) =>{
+  
+  let allArticles = props.news.map((article, key) =>
+      <div id={key} className="article">
+        <div className="article-image">
+          <img src={article.urlToImage} alt={article.title} />
+        </div>
+        <div className="article-info">
+          <h3>{article.title}</h3>
+          <p>{article.description}</p>
+          <a href={article.url}>Article URL</a>
+        </div>
+      </div>
+  )
+  
   return (
     <div id="articles">
-      {/* use .map() to iterate through the news articles */}
+      {allArticles}
     </div>
   )
 }

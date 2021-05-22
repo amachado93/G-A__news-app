@@ -18,8 +18,14 @@ class App extends Component {
 
   async componentDidMount() {
     // do an axios call to get top stories
-
+    axios.get('https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=5d52e2f5800d49198b0bc4b3569aac07')
     // update state with the response
+    .then(data => {
+      console.log(data)
+      this.setState({
+        news: data.data.articles
+      })
+    })
 
   }
 
@@ -27,7 +33,7 @@ class App extends Component {
     return (
       <div className="app" >
         <Header />
-        <Articles />
+        <Articles news={this.state.news} />
         <Footer />
       </div>
     );
