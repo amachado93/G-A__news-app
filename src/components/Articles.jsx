@@ -2,15 +2,15 @@ import React from 'react';
 
 const Articles = (props) =>{
   
-  let allArticles = props.news.map((article, key) =>
-      <div id={key} className="article">
+  let allArticles = props.news.map((article, index) =>
+      <div key={index} className="article">
         <div className="article-image">
-          <img src={article.urlToImage} alt={article.title} />
+          <a href={article.url}><img src={article.urlToImage} alt={article.title} /></a>
         </div>
         <div className="article-info">
-          <h3>{article.title}</h3>
+          <h3><a href={article.url}>{article.title}</a></h3>
           <p>{article.description}</p>
-          <a href={article.url}>Article URL</a>
+          <a className="article-link" href={article.url}>Read more ➡</a>
         </div>
       </div>
   )
