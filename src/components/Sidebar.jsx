@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Sidebar = (props) => {
-    let allHeadlines = props.headlines.map((headline, index) =>
-        <li key={index}>{headline.title}</li>
+    let allHeadlines = props.headlines.slice(0,5).map((headline, index) =>
+        <li key={index}><a href={headline.url}>{headline.title}</a></li>
     )      
 
   return (

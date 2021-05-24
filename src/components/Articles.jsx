@@ -17,6 +17,7 @@ const Articles = (props) =>{
   
   return (
     <div id="articles">
+      <div className="article-hl-container"><h4>Top Stories</h4></div>
       {allArticles}
     </div>
   )

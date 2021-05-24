@@ -10,7 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, p, a, ul, li {
+h1, h2, h3, h4, p, a, ul, li {
   margin: 0;
 }
 
@@ -30,6 +30,8 @@ header {
 
 .header-menu-content{
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30%;
 }
 
@@ -52,9 +54,17 @@ main{
   flex-direction: column;
 }
 
+.article-hl-container{
+  position: absolute;
+}
+
+.article-hl-container > h4{
+  position: fixed;
+}
+
 .article{
   padding:0 2rem 2rem 0;
-  width: 60%;
+  width: 95%;
   display: flex;
   align-items: flex-start;
 }
@@ -67,6 +77,10 @@ main{
 
 .article-info {
   padding-left: 2rem;
+}
+
+.article-info > h3{
+  width: max-content;
 }
 
 .article-info h3 > a{
