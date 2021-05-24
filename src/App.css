@@ -19,10 +19,27 @@ h1, h2, h3, p, a, ul, li {
 }
 
 #header {
-  background-color: #282c34;
+  margin: 0;
+  padding: 0 4rem 0 4rem;
   display: flex;
+  justify-content: space-between;
+  background-color: #282c34;
   color: white;
-  padding-left: 4rem;
+  
+}
+
+.header-menu-content{
+  display: flex;
+  width: 30%;
+}
+
+.header-menu-content > *{
+  flex:1 1 0;
+}
+
+.header-menu-content a{
+  color: white;
+  text-decoration: none;
 }
 
 #articles{
@@ -32,27 +49,38 @@ h1, h2, h3, p, a, ul, li {
 
 .article{
   padding:2rem 4rem;
+  width: 60%;
   display: flex;
-  
+  align-items: flex-start;
 }
-
-
 
 .article-image img{
   width: 100%;
   max-width: 400px;
+  min-width: 400px;
 }
 
 .article-info {
   padding-left: 2rem;
 }
 
-.article:after{
-  content: "";
+.article-info h3 > a{
+  color:#282c34;
+  transition: 500ms;
+}
+
+.article-info h3 > a::after {
+  content: '';
   display: block;
-  width:50%;
-  padding-top: 20px;
-  border-bottom: 1px solid #282c34;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+  }
+  
+.article-info h3 > a:hover::after {
+  width: 100%;
+  background: #282c34;
 }
 
 .article-info a{
