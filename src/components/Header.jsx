@@ -11,6 +11,7 @@ function Header() {
         <a href="#">Media</a>
         <a href="#">About</a>
       </div>
+      
     </header>
   )
 }

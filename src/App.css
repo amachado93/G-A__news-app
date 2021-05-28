@@ -54,14 +54,6 @@ main{
   flex-direction: column;
 }
 
-.article-hl-container{
-  position: absolute;
-}
-
-.article-hl-container > h4{
-  position: fixed;
-}
-
 .article{
   padding:0 2rem 2rem 0;
   width: 95%;
